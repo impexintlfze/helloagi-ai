@@ -21,6 +21,7 @@
       background: #0d0d0d;
       color: #fff;
       text-align: center;
+      scroll-behavior: smooth;
     }
 
     /* Hero Section */
@@ -36,7 +37,7 @@
     #particles-js { position:absolute; width:100%; height:100%; top:0; left:0; z-index:0; }
     .hero-content { position: relative; z-index:2; padding: 2rem; max-width: 800px; }
     .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800; }
-    .hero-content p { font-size: 1.3rem; margin-bottom: 2rem; }
+    .hero-content p { font-size: 1.3rem; margin-bottom: 1rem; }
 
     .btn-contact {
       background: #fff;
@@ -48,6 +49,36 @@
       transition: 0.3s;
     }
     .btn-contact:hover { background: #e2e2e2; }
+
+    /* Price Badge */
+    .price-badge {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1rem;
+      background: #ffb74d;
+      color: #0d0d0d;
+      font-weight: 700;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    /* Floating Button */
+    .floating-btn {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      z-index: 1000;
+      background: #6f5ff3;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+    .floating-btn:hover { background: #5746c3; }
 
     /* Value Section */
     .value-section {
@@ -106,185 +137,8 @@
   <div class="hero-content" data-aos="fade-up">
     <h1>helloagi.ai</h1>
     <p>A premium AI / AGI domain name available for acquisition.</p>
-    <a href="#contact" class="btn-contact">Contact for Offer</a>
-  </div>
-</section>
-
-<!-- Value Proposition Section -->
-<section class="value-section" data-aos="fade-up">
-  <h2>Why helloagi.ai is Valuable</h2>
-  <p>Short, brandable, and highly memorable — perfect for AI startups, AGI platforms, or chatbots.</p>
-  <p>Stand out in the growing AI market with a premium domain that signals expertise and innovation.</p>
-  <div>
-    <span class="badge">Premium .AI</span>
-    <span class="badge">Brandable</span>
-    <span class="badge">Memorable</span>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section" data-aos="fade-up">
-  <h2>Interested in Buying?</h2>
-  <p>Contact us directly at:</p>
-  <a href="mailto:your-email@example.com" class="contact-email">your-email@example.com</a>
-  <p>(Click to open your email client and send an offer)</p>
-</section>
-
-<!-- Footer -->
-<footer data-aos="fade-up">
-  <p>helloagi.ai – Premium Domain For Sale</p>
-  <p>&copy; 2026 helloagi.ai</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ duration: 1000, once: true });
-  particlesJS("particles-js", {
-    "particles": {
-      "number": { "value": 70 },
-      "color": { "value": "#ffffff" },
-      "shape": { "type": "circle" },
-      "opacity": { "value": 0.5 },
-      "size": { "value": 3 },
-      "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.35, "width": 1 },
-      "move": { "enable": true, "speed": 2 }
-    },
-    "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } },
-    "retina_detect": true
-  });
-</script>
-
-</body>
-</html>
-
-✅ This version now:
-
-Looks modern and premium like a $10k+ domain sales page.
-
-Shows your email directly for buyers.
-
-Explains the domain’s value to investors or AI startups.
-
-Includes microanimations, badges, and a dynamic hero.
-
-If you want, I can also add a small section with a “Suggested Price / Make Offer” button that visually boosts credibility and urgency for serious buyers.
-
-Do you want me to add that?
-
-include my email impexintlfze@gmail.com
-
-Perfect! I updated the premium landing page so your email is included and clickable. Visitors can now click it to email you directly.
-
-Here’s the ready-to-deploy HTML for helloagi.ai:
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>helloagi.ai – Premium AI/AGI Domain For Sale</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-  <!-- AOS Animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #0d0d0d;
-      color: #fff;
-      text-align: center;
-    }
-
-    /* Hero Section */
-    #hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, #6f5ff3, #5fc3f3);
-    }
-    #particles-js { position:absolute; width:100%; height:100%; top:0; left:0; z-index:0; }
-    .hero-content { position: relative; z-index:2; padding: 2rem; max-width: 800px; }
-    .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800; }
-    .hero-content p { font-size: 1.3rem; margin-bottom: 2rem; }
-
-    .btn-contact {
-      background: #fff;
-      color: #0d0d0d;
-      padding: 0.8rem 2rem;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn-contact:hover { background: #e2e2e2; }
-
-    /* Value Section */
-    .value-section {
-      padding: 4rem 2rem;
-      background: #121212;
-    }
-    .value-section h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .value-section p { font-size: 1.2rem; max-width: 800px; margin: 0.5rem auto; }
-
-    .badge {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      border-radius: 6px;
-      background: #6f5ff3;
-      color: #fff;
-      font-weight: 600;
-      margin-right: 0.5rem;
-      transition: 0.3s;
-    }
-    .badge:hover { background: #5746c3; }
-
-    /* Contact Section */
-    .contact-section {
-      padding: 4rem 2rem;
-      background: #0f0f0f;
-    }
-    .contact-section h2 { margin-bottom: 1rem; font-size: 2rem; }
-    .contact-section p { font-size: 1.2rem; }
-    .contact-email {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.4rem;
-      background: #6f5ff3;
-      border-radius: 8px;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .contact-email:hover { background: #5746c3; }
-
-    /* Footer */
-    footer {
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #0d0d0d;
-    }
-  </style>
-</head>
-<body>
-
-<!-- Hero Section -->
-<section id="hero">
-  <div id="particles-js"></div>
-  <div class="hero-content" data-aos="fade-up">
-    <h1>helloagi.ai</h1>
-    <p>A premium AI / AGI domain name available for acquisition.</p>
+    <span class="price-badge">$10,000</span>
+    <br>
     <a href="#contact" class="btn-contact">Contact for Offer</a>
   </div>
 </section>
@@ -308,6 +162,9 @@ Here’s the ready-to-deploy HTML for helloagi.ai:
   <a href="mailto:impexintlfze@gmail.com" class="contact-email">impexintlfze@gmail.com</a>
   <p>(Click to open your email client and send an offer)</p>
 </section>
+
+<!-- Floating "Make Offer" Button -->
+<a href="mailto:impexintlfze@gmail.com" class="floating-btn">Make Offer</a>
 
 <!-- Footer -->
 <footer data-aos="fade-up">
