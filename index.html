@@ -1,38 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>HelloAGI.ai – Premium Domain For Sale</title>
-<style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-h1 { font-size: 55px; margin-bottom: 10px; }
-p { font-size: 20px; color: #cbd5e1; margin: 10px 0; }
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 15px 35px;
-  background: #3b82f6;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 18px;
-}
-.button:hover { background: #2563eb; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelloAGI – Next-Gen AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- AOS animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
 <body>
 
-<h1>HelloAGI.ai</h1>
-<p>Premium AI Brand Domain Available for Acquisition</p>
-<p>Perfect for AI startup, AGI platform, or chatbot brand.</p>
+<!-- Hero Section with Particles -->
+<section id="hero" class="hero">
+  <canvas id="particles-js"></canvas>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Meet the Future of AI</h1>
+    <p>Explore, interact, and build with next-generation artificial general intelligence.</p>
+    <div class="hero-buttons">
+      <a href="#signup" class="btn-primary">Get Early Access</a>
+      <a href="#features" class="btn-secondary">Learn More</a>
+    </div>
+  </div>
+</section>
 
-<a class="button" href="mailto:impexintlfze@gmail.com">Make an Offer</a>
+<!-- Features Section -->
+<section id="features" class="features">
+  <h2 data-aos="fade-down">Why HelloAGI?</h2>
+  <div class="feature-cards">
+    <div class="card" data-aos="fade-up">
+      <h3>AGI-Level Intelligence</h3>
+      <p>Next-gen reasoning and insights at your fingertips.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Seamless Integration</h3>
+      <p>Connect with your favorite tools and APIs effortlessly.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Privacy & Security</h3>
+      <p>Built to protect your data with top-tier security standards.</p>
+    </div>
+  </div>
+</section>
 
+<!-- Signup Section -->
+<section id="signup" class="signup">
+  <h2 data-aos="fade-up">Join the AGI Revolution</h2>
+  <p data-aos="fade-up" data-aos-delay="100">Sign up for early access and be among the first to experience HelloAGI.</p>
+  <form data-aos="fade-up" data-aos-delay="200">
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit">Sign Up</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer data-aos="fade-up">
+  <p>&copy; 2026 HelloAGI. All rights reserved.</p>
+  <div class="socials">
+    <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  // Initialize particles.js
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 },
+      "color": { "value": "#ffffff" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.5 },
+      "size": { "value": 3 },
+      "line_linked": { "enable": true, "distance": 150, "color": "#6f5ff3", "opacity": 0.4, "width": 1 },
+      "move": { "enable": true, "speed": 2 }
+    },
+    "interactivity": {
+      "events": { "onhover": { "enable": true, "mode": "repulse" } }
+    },
+    "retina_detect": true
+  });
+</script>
 </body>
 </html>
