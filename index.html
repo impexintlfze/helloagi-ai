@@ -1,193 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>helloagi.ai – Premium AI/AGI Domain For Sale</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>helloagi.ai – Premium AI Domain For Acquisition</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
-  <!-- AOS Animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0b0f;
+  color: #fff;
+  text-align: center;
+  scroll-behavior: smooth;
+}
 
-  <!-- Particles.js -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+/* HERO */
+#hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #5f2eea, #00c6ff);
+}
+#particles-js {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:0;
+}
+.hero-content {
+  position: relative;
+  z-index:2;
+  padding: 2rem;
+  max-width: 900px;
+}
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+.price {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: #ffb74d;
+  color: #000;
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  border-radius: 10px;
+}
+.btn-primary {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #fff;
+  color: #000;
+  padding: 1rem 2.2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #e6e6e6;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #0d0d0d;
-      color: #fff;
-      text-align: center;
-      scroll-behavior: smooth;
-    }
+/* VALUE SECTION */
+.section {
+  padding: 5rem 2rem;
+}
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.section p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: 1.15rem;
+  opacity: 0.85;
+}
 
-    /* Hero Section */
-    #hero {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(135deg, #6f5ff3, #5fc3f3);
-    }
-    #particles-js { position:absolute; width:100%; height:100%; top:0; left:0; z-index:0; }
-    .hero-content { position: relative; z-index:2; padding: 2rem; max-width: 800px; }
-    .hero-content h1 { font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800; }
-    .hero-content p { font-size: 1.3rem; margin-bottom: 1rem; }
+.badges span {
+  display: inline-block;
+  background: #1f1f2e;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #333;
+}
 
-    .btn-contact {
-      background: #fff;
-      color: #0d0d0d;
-      padding: 0.8rem 2rem;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn-contact:hover { background: #e2e2e2; }
+/* TRUST */
+.trust-box {
+  margin-top: 2rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
 
-    /* Price Badge */
-    .price-badge {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.6rem 1rem;
-      background: #ffb74d;
-      color: #0d0d0d;
-      font-weight: 700;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
+/* CONTACT */
+.contact-section {
+  background: #111118;
+  padding: 5rem 2rem;
+}
+.offer-form {
+  max-width: 550px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.offer-form input,
+.offer-form textarea {
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #1a1a25;
+  color: #fff;
+  font-size: 1rem;
+}
+.offer-form button {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background: #5f2eea;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.offer-form button:hover {
+  background: #4720b8;
+}
+.note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
 
-    /* Floating Button */
-    .floating-btn {
-      position: fixed;
-      right: 30px;
-      bottom: 30px;
-      z-index: 1000;
-      background: #6f5ff3;
-      color: #fff;
-      padding: 1rem 1.5rem;
-      border-radius: 50px;
-      font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      transition: 0.3s;
-    }
-    .floating-btn:hover { background: #5746c3; }
+/* FLOATING BUTTON */
+.floating-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: #5f2eea;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
 
-    /* Value Section */
-    .value-section {
-      padding: 4rem 2rem;
-      background: #121212;
-    }
-    .value-section h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .value-section p { font-size: 1.2rem; max-width: 800px; margin: 0.5rem auto; }
-
-    .badge {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      border-radius: 6px;
-      background: #6f5ff3;
-      color: #fff;
-      font-weight: 600;
-      margin-right: 0.5rem;
-      transition: 0.3s;
-    }
-    .badge:hover { background: #5746c3; }
-
-    /* Contact Section */
-    .contact-section {
-      padding: 4rem 2rem;
-      background: #0f0f0f;
-    }
-    .contact-section h2 { margin-bottom: 1rem; font-size: 2rem; }
-    .contact-section p { font-size: 1.2rem; }
-    .contact-email {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.8rem 1.4rem;
-      background: #6f5ff3;
-      border-radius: 8px;
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .contact-email:hover { background: #5746c3; }
-
-    /* Footer */
-    footer {
-      padding: 2rem;
-      font-size: 0.9rem;
-      background: #0d0d0d;
-    }
-  </style>
+/* FOOTER */
+footer {
+  padding: 2rem;
+  font-size: 0.85rem;
+  background: #0b0b0f;
+  opacity: 0.6;
+}
+</style>
 </head>
+
 <body>
 
-<!-- Hero Section -->
 <section id="hero">
   <div id="particles-js"></div>
   <div class="hero-content" data-aos="fade-up">
     <h1>helloagi.ai</h1>
-    <p>A premium AI / AGI domain name available for acquisition.</p>
-    <span class="price-badge">$25K</span>
+    <p>A rare, brand-defining domain for the future of Artificial General Intelligence.</p>
+    <div class="price">$25,000 USD</div>
     <br>
-    <a href="#contact" class="btn-contact">Contact for Offer</a>
+    <a href="#contact" class="btn-primary">Submit Acquisition Offer</a>
   </div>
 </section>
 
-<!-- Value Proposition Section -->
-<section class="value-section" data-aos="fade-up">
-  <h2>Why helloagi.ai is Valuable</h2>
-  <p>Short, brandable, and highly memorable — perfect for AI startups, AGI platforms, or chatbots.</p>
-  <p>Stand out in the growing AI market with a premium domain that signals expertise and innovation.</p>
-  <div>
-    <span class="badge">Premium .AI</span>
-    <span class="badge">Brandable</span>
-    <span class="badge">Memorable</span>
+<section class="section" data-aos="fade-up">
+  <h2>Strategic Digital Asset</h2>
+  <p>Short. Memorable. Authority-driven.</p>
+  <p>Ideal for AI startups, AGI research labs, enterprise AI platforms, or next-generation technology ventures.</p>
+  
+  <div class="badges">
+    <span>Premium .AI Extension</span>
+    <span>Two-Word Brand</span>
+    <span>High Recall Value</span>
+    <span>Global Market Appeal</span>
+  </div>
+
+  <div class="trust-box">
+    Secure transfer via Escrow.com or Afternic available upon agreement.
   </div>
 </section>
 
-<!-- Contact Section -->
 <section id="contact" class="contact-section" data-aos="fade-up">
-  <h2>Interested in Buying?</h2>
-  <p>Contact us directly at:</p>
-  <a href="mailto:impexintlfze@gmail.com" class="contact-email">impexintlfze@gmail.com</a>
-  <p>(Click to open your email client and send an offer)</p>
+  <h2>Submit Offer</h2>
+  <p>Qualified buyers will receive a response within 24 hours.</p>
+
+  <form action="https://formspree.io/f/xqedwaog" method="POST" class="offer-form">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="number" name="offer" placeholder="Offer Amount (USD)" required>
+    <textarea name="message" rows="5" placeholder="Message (Optional)"></textarea>
+    <button type="submit">Send Offer</button>
+  </form>
+
+  <div class="note">
+    Direct inquiries: impexintlfze@gmail.com
+  </div>
 </section>
 
-<!-- Floating "Make Offer" Button -->
-<a href="mailto:impexintlfze@gmail.com" class="floating-btn">Make Offer</a>
+<a href="#contact" class="floating-btn">Make Offer</a>
 
-<!-- Footer -->
-<footer data-aos="fade-up">
-  <p>helloagi.ai – Premium Domain For Sale</p>
-  <p>&copy; 2026 helloagi.ai</p>
+<footer>
+  helloagi.ai – Premium Domain Asset<br>
+  © 2026 All Rights Reserved
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({ duration: 1000, once: true });
-  particlesJS("particles-js", {
-    "particles": {
-      "number": { "value": 70 },
-      "color": { "value": "#ffffff" },
-      "shape": { "type": "circle" },
-      "opacity": { "value": 0.5 },
-      "size": { "value": 3 },
-      "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.35, "width": 1 },
-      "move": { "enable": true, "speed": 2 }
-    },
-    "interactivity": { "events": { "onhover": { "enable": true, "mode": "repulse" } } },
-    "retina_detect": true
-  });
+AOS.init({ duration: 1000, once: true });
+
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.4 },
+    size: { value: 3 },
+    line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.25, width: 1 },
+    move: { enable: true, speed: 2 }
+  },
+  interactivity: { events: { onhover: { enable: true, mode: "repulse" } } },
+  retina_detect: true
+});
 </script>
 
 </body>
